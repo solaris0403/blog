@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import './Main.css';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import {Route} from "react-router-dom";
+import Home from "../Home/Home";
+import Article from "../Article/Article";
+import Picture from "../Picture/Picture";
+import About from "../About/About";
+import Message from "../Message/Message";
 
 
 class Main extends Component {
@@ -28,38 +33,10 @@ class Content extends Component {
         return (
             <div className='content'>
                 <Route exact path="/" component={Home}/>
+                <Route path="/article" component={Article}/>
+                <Route path="/picture" component={Picture}/>
                 <Route path="/about" component={About}/>
                 <Route path="/message" component={Message}/>
-            </div>
-        )
-    }
-}
-
-class About extends Component {
-    render() {
-        return (
-            <div>
-                About
-            </div>
-        )
-    }
-}
-
-class Message extends Component {
-    render() {
-        return (
-            <div>
-                Message
-            </div>
-        )
-    }
-}
-
-class Home extends Component {
-    render() {
-        return (
-            <div>
-                Home
             </div>
         )
     }
@@ -87,6 +64,7 @@ class ListItem extends Component {
         )
     }
 }
+
 
 class SideBar extends Component {
     render() {
