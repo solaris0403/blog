@@ -1,7 +1,7 @@
 .main {
     width: 960px;
     margin: 0 auto;
-    height: 500px;
+    /*height: 500px;*/
 }
 
 .content {
@@ -14,7 +14,7 @@
     width: 280px;
     float: right;
     height: 100%;
-    background-color: #f00;
+    /*background-color: #f00;*/
 }
 
 .clearfix:after {
@@ -24,51 +24,6 @@
     visibility: hidden;
     height: 0;
     font-size: 0;
-}
-
-.content .listItem {
-    padding-top: 24px;
-    width: 100%;
-    height: 152px;
-    padding-bottom: 42px;
-    background-color: #fff9c0;
-}
-
-.listItem .list-left {
-    width: 235px;
-    height: 152px;
-    display: block;
-}
-
-.list-left img {
-    width: 100%;
-    height: 100%;
-}
-
-.list-left {
-    float: left;
-}
-
-.list-right {
-    float: right;
-    position: relative;
-    width: 410px;
-    background-color: #ff0000;
-    height: 100%;
-}
-
-.list-title {
-    margin-top: 3px;
-    display: block;
-}
-
-.list-description {
-    display: block;
-}
-
-.list-bottom {
-    position: absolute;
-    bottom: 3px;
 }
 
 

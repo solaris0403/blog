@@ -1,0 +1,54 @@
+.listItem {
+    width: 100%;
+    height: 152px;
+    margin: 24px 0 42px 0;
+}
+
+.listItem .list-left {
+    width: 235px;
+    height: 152px;
+    display: block;
+}
+
+.list-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.list-left {
+    float: left;
+}
+
+.list-right {
+    float: right;
+    position: relative;
+    width: 410px;
+    height: 100%;
+}
+
+.list-title {
+    margin-top: 3px;
+    display: block;
+}
+
+.list-excerpt {
+    display: block;
+    overflow: hidden;
+    height: 80px;
+    text-overflow:ellipsis;
+    /*white-space: nowrap;*/
+}
+
+.list-bottom {
+    position: absolute;
+    bottom: 3px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+}
