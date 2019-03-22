@@ -1,22 +1,20 @@
 .listItem {
     width: 100%;
     height: 152px;
-    margin: 24px 0 42px 0;
+    margin: 24px 0;
+    /*border: 1px solid #654;*/
 }
 
 .listItem .list-left {
     width: 235px;
     height: 152px;
     display: block;
+    float: left;
 }
 
 .list-left img {
     width: 100%;
     height: 100%;
-}
-
-.list-left {
-    float: left;
 }
 
 .list-right {
@@ -27,21 +25,46 @@
 }
 
 .list-title {
-    margin-top: 3px;
+    color: #333333;
+    font-weight: 400;
+    font-size: 17px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
     display: block;
+    margin-right: 8px;
 }
 
 .list-excerpt {
+    margin-top: 8px;
     display: block;
     overflow: hidden;
-    height: 80px;
-    text-overflow:ellipsis;
-    /*white-space: nowrap;*/
+    text-overflow: ellipsis;
+    color: #777777;
+    font-size: 12px;
+    font-weight: 400;
+    margin-right: 8px;
+    height: 70px;
+    line-height: 23px;
 }
+
 
 .list-bottom {
     position: absolute;
+    width: 100%;
     bottom: 3px;
+}
+
+.list-bottom .list-tags {
+    width: 240px;
+    font-size: 12px;
+    float: left;
+}
+
+.list-bottom .list-date {
+    float: right;
+    color: #747f8c;
+    font-size: 12px;
 }
 
 .clearfix:after {

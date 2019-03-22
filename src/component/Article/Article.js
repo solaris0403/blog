@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './Article.css';
 import ArticleItem from "../ListItem/ArticleItem";
-import {Pagination} from 'antd';
+import {Pagination, Divider} from 'antd';
 
 
-const pageSize = 10;
+const pageSize = 5;
 const initPage = 1;
 
 class Article extends Component {
@@ -15,6 +15,10 @@ class Article extends Component {
             'total': 0,
             'totalPages': 0,
         };
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('Article componentDidUpdate')
     }
 
     componentDidMount() {

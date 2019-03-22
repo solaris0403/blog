@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './ArticleItem.css';
 
 class ArticleItem extends Component {
+
+
     render() {
         let post = this.props.post;
         let objE = document.createElement("div");
@@ -19,11 +21,11 @@ class ArticleItem extends Component {
                 <div className="list-right">
                     <span className="list-title">{post.title.rendered}</span>
                     <span className="list-excerpt">{excerpt}</span>
-                    <div className="list-bottom">
-                        <span className="list-tags">{tags}</span>
+                    <div className="list-bottom clearfix">
+                        <div className='list-tags'>
+                            <span className="tag">{tags}</span>
+                        </div>
                         <span className="list-date">{post.date}</span>
-                        <span className="list-comment">评论</span>
-                        <span className="list-views">浏览</span>
                     </div>
                 </div>
             </div>
